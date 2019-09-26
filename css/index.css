@@ -140,32 +140,42 @@ body {
   margin: auto;
   padding-top: 5px;
 }
-.flex-center {
+@media (max-width: 500px) {
+  .container {
+    width: 100vw;
+  }
+}
+.container .flex-center {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.main-font {
+.container .main-font {
   font-family: 'Raleway', sans-serif;
 }
-nav {
+.container nav {
   display: flex;
   width: 50%;
   margin: 15px auto 30px auto;
   justify-content: space-between;
 }
-nav a {
+@media (max-width: 500px) {
+  .container nav {
+    width: 80%;
+  }
+}
+.container nav a {
   color: #43557D;
   text-decoration: none;
   font-size: 18px;
   font-family: 'Raleway', sans-serif;
 }
-.accent {
+.container .accent {
   color: #43557D;
   font-weight: 700;
 }
-.top-info {
+.container .top-info {
   background-color: #D4E0FC;
   padding: 15px;
   width: 80%;
@@ -175,54 +185,139 @@ nav a {
   justify-content: center;
   align-items: center;
 }
-.top-info h1 {
+.container .top-info h1 {
   font-family: 'Quicksand', sans-serif;
   font-size: 40px;
   margin: 15px 0px;
 }
-.top-info img {
+.container .top-info img {
   width: 85%;
 }
-.top-info h2 {
+.container .top-info h2 {
   font-size: 26px;
   font-family: 'Raleway', sans-serif;
 }
-.top-info p {
+@media (max-width: 500px) {
+  .container .top-info h2 {
+    font-size: 20px;
+  }
+}
+.container .top-info p {
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
 }
-hr {
+.container hr {
   margin: 20px auto;
   width: 80%;
 }
-.middle-content {
+.container .middle-content {
   display: flex;
   justify-content: space-between;
   width: 80%;
   margin: 25px auto;
 }
-.middle-content .info-card {
+@media (max-width: 500px) {
+  .container .middle-content {
+    flex-direction: column;
+  }
+}
+.container .middle-content .info-card {
   width: 45%;
   padding: 10px;
 }
-.middle-content .info-card h3 {
+@media (max-width: 500px) {
+  .container .middle-content .info-card {
+    width: 90%;
+  }
+}
+.container .middle-content .info-card h3 {
   font-size: 26px;
   font-weight: 700;
   color: #43557D;
   margin-bottom: 10px;
   font-family: 'Raleway', sans-serif;
 }
-.middle-content .info-card ul {
+.container .middle-content .info-card ul {
   border: 1px solid #43557D;
 }
-.middle-content .info-card ul li {
+.container .middle-content .info-card ul li {
   border: 1px solid #43557D;
   padding: 12px;
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
 }
-.middle-content .info-card p {
+.container .middle-content .info-card p {
   font-size: 18px;
   line-height: 22px;
   font-family: 'Raleway', sans-serif;
+}
+.container .bottom-content {
+  display: flex;
+  flex-direction: column;
+  background-color: #D4E0FC;
+  width: 80%;
+  margin: auto;
+}
+.container .bottom-content h3 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #43557D;
+  margin: 10px 0px;
+  font-family: 'Raleway', sans-serif;
+}
+.container .bottom-content #work-history-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+}
+.container .bottom-content #work-history-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #43557D;
+  color: white;
+  border: 1px solid black;
+  padding: 8px;
+}
+.container .bottom-content #work-history-table td {
+  border: 1px solid black;
+  padding: 8px;
+}
+.container .bottom-content #work-history-table tr:nth-child(even) {
+  background-color: #89ABFD;
+}
+.container .bottom-content #work-history-table tr:hover {
+  background-color: #696F7D;
+}
+.container footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  background-color: #D4E0FC;
+}
+.container footer h3 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #43557D;
+  margin: 25px 0px 10px 0px;
+  font-family: 'Raleway', sans-serif;
+}
+.container footer address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container footer address ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container footer address ul li {
+  font-family: 'Raleway', sans-serif;
+  margin: 4px;
 }
