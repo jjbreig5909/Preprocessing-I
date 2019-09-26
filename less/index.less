@@ -70,6 +70,7 @@ html, body {
 	padding-top: 5px;
 	@media(max-width:500px){
 		width: 100vw;
+		min-width: 450px;
 	}
 
 
@@ -148,7 +149,7 @@ html, body {
 		width: 80%;
 		margin: 25px auto;
 		@media (max-width: 500px) {
-			flex-direction: column;
+			.flex-center();
 		}
 
 		.info-card{
@@ -156,6 +157,7 @@ html, body {
 			padding: 10px;
 			@media (max-width: 500px){
 				width: 90%;
+				.flex-center();			
 			}
 
 			h3{
@@ -198,6 +200,9 @@ html, body {
 				color: @accent-color;
 				margin: 10px 0px;
 				.main-font();
+				@media (max-width: 500px) {
+					text-align: center;
+				}
 			}
 
 		#work-history-table{
