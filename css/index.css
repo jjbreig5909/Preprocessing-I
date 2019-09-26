@@ -1,1 +1,228 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+/* Variables */
+.container {
+  width: 80%;
+  margin: auto;
+  padding-top: 5px;
+}
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-font {
+  font-family: 'Raleway', sans-serif;
+}
+nav {
+  display: flex;
+  width: 50%;
+  margin: 15px auto 30px auto;
+  justify-content: space-between;
+}
+nav a {
+  color: #43557D;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+}
+.accent {
+  color: #43557D;
+  font-weight: 700;
+}
+.top-info {
+  background-color: #D4E0FC;
+  padding: 15px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.top-info h1 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 40px;
+  margin: 15px 0px;
+}
+.top-info img {
+  width: 85%;
+}
+.top-info h2 {
+  font-size: 26px;
+  font-family: 'Raleway', sans-serif;
+}
+.top-info p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+}
+hr {
+  margin: 20px auto;
+  width: 80%;
+}
+.middle-content {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 25px auto;
+}
+.middle-content .info-card {
+  width: 45%;
+  padding: 10px;
+}
+.middle-content .info-card h3 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #43557D;
+  margin-bottom: 10px;
+  font-family: 'Raleway', sans-serif;
+}
+.middle-content .info-card ul {
+  border: 1px solid #43557D;
+}
+.middle-content .info-card ul li {
+  border: 1px solid #43557D;
+  padding: 12px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+}
+.middle-content .info-card p {
+  font-size: 18px;
+  line-height: 22px;
+  font-family: 'Raleway', sans-serif;
+}
