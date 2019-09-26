@@ -1,1 +1,336 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+/* Variables */
+.container {
+  width: 80%;
+  margin: auto;
+  padding-top: 5px;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100vw;
+    min-width: 450px;
+  }
+}
+.container .flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .main-font {
+  font-family: 'Raleway', sans-serif;
+}
+.container nav {
+  display: flex;
+  width: 50%;
+  margin: 15px auto 30px auto;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .container nav {
+    width: 80%;
+  }
+}
+.container nav a {
+  color: #43557D;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+}
+.container .accent {
+  color: #43557D;
+  font-weight: 700;
+}
+.container .top-info {
+  background-color: #D4E0FC;
+  padding: 15px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .top-info h1 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 40px;
+  margin: 15px 0px;
+}
+.container .top-info img {
+  width: 85%;
+}
+.container .top-info h2 {
+  font-size: 26px;
+  font-family: 'Raleway', sans-serif;
+}
+@media (max-width: 500px) {
+  .container .top-info h2 {
+    font-size: 20px;
+  }
+}
+.container .top-info p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+}
+.container hr {
+  margin: 20px auto;
+  width: 80%;
+}
+.container .middle-content {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 25px auto;
+}
+@media (max-width: 500px) {
+  .container .middle-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.container .middle-content .info-card {
+  width: 45%;
+  padding: 10px;
+}
+@media (max-width: 500px) {
+  .container .middle-content .info-card {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.container .middle-content .info-card h3 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #43557D;
+  margin-bottom: 10px;
+  font-family: 'Raleway', sans-serif;
+}
+.container .middle-content .info-card ul {
+  border: 1px solid #43557D;
+}
+.container .middle-content .info-card ul li {
+  border: 1px solid #43557D;
+  padding: 12px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+}
+.container .middle-content .info-card p {
+  font-size: 18px;
+  line-height: 22px;
+  font-family: 'Raleway', sans-serif;
+}
+.container .bottom-content {
+  display: flex;
+  flex-direction: column;
+  background-color: #D4E0FC;
+  width: 80%;
+  margin: auto;
+}
+.container .bottom-content h3 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #43557D;
+  margin: 10px 0px;
+  font-family: 'Raleway', sans-serif;
+}
+@media (max-width: 500px) {
+  .container .bottom-content h3 {
+    text-align: center;
+  }
+}
+.container .bottom-content #work-history-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+}
+.container .bottom-content #work-history-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #43557D;
+  color: white;
+  border: 1px solid black;
+  padding: 8px;
+}
+.container .bottom-content #work-history-table td {
+  border: 1px solid black;
+  padding: 8px;
+}
+.container .bottom-content #work-history-table tr:nth-child(even) {
+  background-color: #89ABFD;
+}
+.container .bottom-content #work-history-table tr:hover {
+  background-color: #696F7D;
+}
+.container footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  background-color: #D4E0FC;
+}
+.container footer h3 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #43557D;
+  margin: 25px 0px 10px 0px;
+  font-family: 'Raleway', sans-serif;
+}
+.container footer address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container footer address ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container footer address ul li {
+  font-family: 'Raleway', sans-serif;
+  margin: 4px;
+}
